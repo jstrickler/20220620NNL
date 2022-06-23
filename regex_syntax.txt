@@ -1,0 +1,78 @@
+
+pat     "pat"    "we are compatible"   "pattern matching"    "He spat"
+
+p.t         . does not match \n by default
+p..t
+
+sm.th    smith  smyth  sm th   sm;th
+
+p\.t     "p.t"
+
+p[aeiou]t      "pat" "spittoon"   "put on a hat"
+
+[0123456789][0123456789][0123456789]-[0123456789][0123456789]-[0123456789][0123456789][0123456789][0123456789]
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+\d\d\d-\d\d-\d\d\d\d
+\d{3}-\d{2}-\d{4}
+
+\d [0-9]   digits
+\w [a-zA-Z0-9_]   "name" or "word" characters
+\s [ \t\n\r\f]    whitespace
+
+[0-9a-fA-F]   hex digits
+
+*   0 or more (same as {0,}
++   1 or more (same as {1,}
+?   0 or 1    (same as {0,1}
+{x}   exactly x
+{x,}  at least x
+{x,y} x through y times (inclusive)
+
+pa*t      pt pat paaat  paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat
+pa+t    same, but does not match pt
+pa{2}t
+p[aeiou]{1,2}t
+
+^pat     "pattern"   not "compatible"
+ball$    "football"  not "ballet"
+
+^\d+$    entire string must be digits
+^\s*\d+\s*$  same, but leading/trailing space is OK
+
+     ---       group 1
+-------------  group 0
+^\s*(\d+)\s*$
+
+.*    match anything
+
+spam.*ham
+
+pa+t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

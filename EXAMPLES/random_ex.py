@@ -14,4 +14,7 @@ for i in range(1, 11):
     print("randrange(1, 5):", random.randrange(1, 5))
     print("choice(fruit):", random.choice(fruits))
     print("sample(fruit, 3):", random.sample(fruits, 3))
+    random.shuffle(fruits)
+    print("fruits: {}".format(fruits))
+    
     print()

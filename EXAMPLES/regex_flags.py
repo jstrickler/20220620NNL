@@ -12,7 +12,7 @@ officia deserunt Y45 mollit anim id est laborum"""
 
 pattern = r'[A-Z]\d{2,3}'
 
-if re.search(pattern, s, re.IGNORECASE):  # <1>
+if re.search(pattern, s, re.IGNORECASE | re.MULTILINE):  # <1>
     print("Found pattern.")
 print()
 
