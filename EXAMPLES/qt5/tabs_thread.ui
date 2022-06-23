@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TabsThread</class>
+ <widget class="QMainWindow" name="TabsThread">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tabs</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabs">
+    <property name="geometry">
+     <rect>
+      <x>-7</x>
+      <y>6</y>
+      <width>525</width>
+      <height>299</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tabA">
+     <attribute name="title">
+      <string>A</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>15</y>
+        <width>56</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chat</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="te_chat">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>39</y>
+        <width>399</width>
+        <height>212</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabB">
+     <attribute name="title">
+      <string>B</string>
+     </attribute>
+     <widget class="QPlainTextEdit" name="te_data">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>43</y>
+        <width>274</width>
+        <height>182</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>26</x>
+        <y>15</y>
+        <width>56</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Data feed:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabC">
+     <attribute name="title">
+      <string>C</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>36</x>
+        <y>25</y>
+        <width>147</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Plan A</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Plan B</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>Plan C</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>526</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTabs">
+    <property name="title">
+     <string>Tabs</string>
+    </property>
+    <addaction name="actionA"/>
+    <addaction name="actionB"/>
+    <addaction name="actionC"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionStart_feed"/>
+   </widget>
+   <addaction name="menuTabs"/>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionA">
+   <property name="text">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionB">
+   <property name="text">
+    <string>B</string>
+   </property>
+  </action>
+  <action name="actionC">
+   <property name="text">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionStart_feed">
+   <property name="text">
+    <string>Start feed</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>TabsThread</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
