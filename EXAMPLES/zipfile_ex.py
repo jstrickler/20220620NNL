@@ -7,7 +7,7 @@ import os.path
 rzip = ZipFile("../DATA/textfiles.zip")  # <1>
 print(rzip.namelist())  # <2>
 ty = rzip.read('tyger.txt').decode()  # <3>
-print(ty[:50])
+print(ty)
 rzip.extract('parrot.txt')  # <4>
 
 # creating a zip file

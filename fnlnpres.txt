@@ -1,4 +1,4 @@
-Woodrow Wilson
-Calvin Coolidge
-Herbert Clark Hoover
-Ronald Wilson Reagan
+Woodrow Wilson 1913-03-04 00:00:00 1921-03-04 00:00:00
+Calvin Coolidge 1923-08-03 00:00:00 1929-03-04 00:00:00
+Herbert Clark Hoover 1929-03-04 00:00:00 1933-03-04 00:00:00
+Ronald Wilson Reagan 1981-01-20 00:00:00 1989-01-20 00:00:00
