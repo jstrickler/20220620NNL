@@ -1,15 +1,17 @@
+#!/usr/bin/env python
+
 import sys
 
 from PyQt5.QtWidgets import QMainWindow, QApplication
-from ui_boeingdemo import Ui_BoeingDemo
+from ui_nnldemo import Ui_NNLDemo
 
 
-class BoeingDemoMain(QMainWindow):
+class NNLDemoMain(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
 
         # Set up the user interface from Designer.
-        self.ui = Ui_BoeingDemo()
+        self.ui = Ui_NNLDemo()
         self.ui.setupUi(self)
 
         # Connect up menu actions
@@ -21,6 +23,6 @@ class BoeingDemoMain(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    main = BoeingDemoMain()
+    main = NNLDemoMain()
     main.show()
     sys.exit(app.exec_())
