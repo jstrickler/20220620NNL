@@ -19,7 +19,14 @@ class NNLDemoMain(QMainWindow):
 
         # Connect up buttons.
         # self.ui.BUTTON_NAME.clicked.connect(self._pushed)
+        self.ui.bt_yes.clicked.connect(self.handle_yes)
+        self.ui.bt_no.clicked.connect(self.handle_no)
 
+    def handle_yes(self):
+        self.ui.le_user_name.setText("YES!")
+
+    def handle_no(self):
+        self.ui.le_user_name.setText("NO!")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
